@@ -1,5 +1,5 @@
 ## The code is for caching the value of time consuming computations, such as inverse of matrix.
-## The scoping rukes are used to store the value, so we can retrieve it later rather then recalculate.
+## The scoping rules are used to store the value, so we can retrieve it later rather then recalculate.
 
 
 ## Summary on makeCacheMatrix
@@ -28,7 +28,7 @@ makeCacheMatrix <- function (x = matrix()){
 
 
 ## cacheSolve Summary
-# This function checks if the value of the variable s exists (ie stored previosuly), and is not NULL. 
+# This function checks if the value of the variable exists (ie stored previosuly), and is not NULL. 
 # If it exists, it returns the message and the value s, that is supposed to be the inverse.
 # If not, s calculates through solve (data, ...) the inverse of the matrix, 
 # and x$setsolve(s) stores it in the object, assigned above.
